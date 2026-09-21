@@ -1,0 +1,6 @@
+{
+  "name": "Loto Niger Analytics",
+  "description": "Application mobile d'analyse statistique et probabiliste pour Loto Niger (5 sur 90).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,26 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // RÈGLE CRITIQUE DE SÉCURITÉ :
+    // Refus total d'accès direct en lecture et écriture pour les clients sur les collections sensibles.
+    // Seul le Backend Cloud Functions (Admin SDK) a le droit de lire/écrire.
+    match /codes/{codeId} {
+      allow read, write: if false;
+    }
+
+    match /tentatives/{idAppareil} {
+      allow read, write: if false;
+    }
+
+    match /logs_activations/{logId} {
+      allow read, write: if false;
+    }
+
+    // Par défaut : aucun accès client direct non authentifié
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

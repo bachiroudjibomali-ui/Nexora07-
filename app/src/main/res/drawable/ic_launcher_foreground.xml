@@ -1,0 +1,46 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Golden Orange Outer Ring -->
+    <path
+        android:fillColor="#E07B39"
+        android:pathData="M54,54m-26,0a26,26 0 1,0 52,0a26,26 0 1,0 -52,0" />
+    <!-- Dark Inner Circle -->
+    <path
+        android:fillColor="#12181B"
+        android:pathData="M54,54m-22,0a22,22 0 1,0 44,0a22,22 0 1,0 -44,0" />
+    <!-- White Inner Rim -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.15"
+        android:pathData="M54,54m-19,0a19,19 0 1,0 38,0a19,19 0 1,0 -38,0" />
+    <!-- Number 90 and Chart Bars in Icon -->
+    <!-- Bar 1 (Green) -->
+    <path
+        android:fillColor="#1FA363"
+        android:pathData="M41,64h5v-10h-5z" />
+    <!-- Bar 2 (Blue) -->
+    <path
+        android:fillColor="#468FD0"
+        android:pathData="M49,64h5v-16h-5z" />
+    <!-- Bar 3 (Orange) -->
+    <path
+        android:fillColor="#E07B39"
+        android:pathData="M57,64h5v-22h-5z" />
+    <!-- Bar 4 (White) -->
+    <path
+        android:fillColor="#E8EDEF"
+        android:pathData="M65,64h5v-14h-5z" />
+    <!-- Trend Line -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:pathData="M43,51L51,46L59,40L67,48" />
+    <!-- Star on top -->
+    <path
+        android:fillColor="#E07B39"
+        android:pathData="M54,36l1.2,2.8l3,0.3l-2.2,2l0.6,3l-2.6,-1.5l-2.6,1.5l0.6,-3l-2.2,-2l3,-0.3z" />
+</vector>
